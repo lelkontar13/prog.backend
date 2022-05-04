@@ -1,0 +1,45 @@
+<section>
+  <article>
+    <p class="tituloMain1">¿Querés agregar más productos?</p>
+    <!--FORMULARIO BOOTSTRAP-->
+    <form class="datosForm" id="form" action="/api/productos" method="post">
+      <div class="mb-3">
+        <label for="exampleInputTitle" class="form-label">Title</label>
+        <input
+          type="title"
+          class="form-control"
+          id="exampleInputTitle"
+          name="title"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPrice" class="form-label">Price</label>
+        <input
+          type="Price"
+          class="form-control"
+          id="exampleInputPrice"
+          name="price"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputThumbnail" class="form-label">Thumbnail</label>
+        <input
+          type="Thumbnail"
+          class="form-control"
+          id="exampleInputThumbnail"
+          name="thumbnail"
+        />
+      </div>
+      <button
+        type="submit"
+        class="btn btn-secondary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        id="boton"
+      >
+        Enviar
+      </button>
+    </form>
+    <!--FIN FORMULARIO-->
+  </article>
+</section>
