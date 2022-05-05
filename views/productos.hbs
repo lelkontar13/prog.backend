@@ -1,0 +1,54 @@
+<div class="conteinerImagenes">
+  <div class="row">
+    <div class="col-6 col-sm-3" id="sfiha">
+      <img class="tamanioImg" src="../public/images/sfiha.png" alt="Sfiha" />
+    </div>
+    <div class="col-6 col-sm-3" id="fatayC">
+      <img
+        class="tamanioImg"
+        src="../public/images/fatayc.png"
+        alt="Fatay de carne"
+      />
+    </div>
+    <div class="col-6 col-sm-3" id="falafel">
+      <img
+        class="tamanioImg"
+        src="../public/images/falafel.png"
+        alt="Falafel"
+      />
+    </div>
+    <div class="col-6 col-sm-3" id="kebbeH">
+      <img
+        class="tamanioImg"
+        src="../public/images/kebbehorno.png"
+        alt="Kebbe al horno"
+      />
+    </div>
+    <div class="col-6 col-sm-3" id="hummus">
+      <img class="tamanioImg" src="../public/images/hummus.png" alt="Hummus" />
+    </div>
+    <div class="col-6 col-sm-3" id="tabule">
+      <img class="tamanioImg" src="../public/images/tabule.png" alt="Tabule" />
+    </div>
+    <div class="col-6 col-sm-3" id="shanklish">
+      <img
+        class="tamanioImg"
+        src="../public/images/shanklish.png"
+        alt="Shanklish"
+      />
+    </div>
+    <div class="col-6 col-sm-3" id="iabrak">
+      <img class="tamanioImg" src="../public/images/iabrak.png" alt="Iabrak" />
+    </div>
+    <div class="col-6 col-sm-3" id="malfuf">
+      <img class="tamanioImg" src="../public/images/malfuf.png" alt="Malfuf" />
+    </div>
+    {{#if listExists}}
+      <div class="col-6 col-sm-3">
+        {{#each platoAgregado}}
+          <img class="tamanioImg" src="{{this.thumbnail}}" />
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
+</div>
